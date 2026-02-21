@@ -2,10 +2,18 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") return true;
+    if (savedTheme === "light") return false;
+
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  });
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", dark);
+    localStorage.setItem("theme", dark ? "dark" : "light");
   }, [dark]);
 
   return (
