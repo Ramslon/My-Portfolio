@@ -22,7 +22,7 @@ const projectsData = [
     {
     title: 'Personal Portfolio Website',
     description: 'A React-based portfolio website built with Tailwind CSS showcasing my projects, skills, and experience.',
-    link: 'https://github.com/Ramslon/My-Portfolio'
+    link: "https://github.com/Ramslon/My-Portfolio"
     }
 ];
 
@@ -32,16 +32,28 @@ const Projects = () => {
       <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
 
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {projectsData.map((project, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ scale: 1.05 }}
-            className="p-6 bg-gray-50 rounded-2xl shadow-md hover:shadow-xl transition"
-          >
-            <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
-            <p className="text-gray-600">{project.description}</p>
-          </motion.div>
-        ))}
+    {projectsData.map((project, index) => (
+  <motion.a
+    key={index}
+    href={project.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.98 }}
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5 }}
+    className="p-6 bg-gray-50 rounded-2xl shadow-md hover:shadow-xl transition block"
+  >
+    <h3 className="text-xl font-semibold mb-4">
+      {project.title}
+    </h3>
+
+    <p className="text-gray-600">
+      {project.description}
+    </p>
+  </motion.a>
+))}
       </div>
     </section>
   );

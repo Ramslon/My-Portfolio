@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin ,FaEmail } from "react-icons/fa";
+import { FaGithub, FaLinkedin  } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -10,7 +10,6 @@ const Contact = () => {
         <div className="flex justify-center gap-6 text-2xl">
             <a href="https://www.linkedin.com/in/ramson-lonayo-9b5a3221b/" className="text-blue-600 hover:underline "><FaLinkedin /></a>
             <a href="https://github.com/Ramslon" className="text-blue-600 hover:underline "><FaGithub /></a>
-            <a href="mailto:ramsonlonayo@gmail.com" className="text-blue-600 hover:underline "><FaEmail /></a>
         </div>
     </section>
   );
