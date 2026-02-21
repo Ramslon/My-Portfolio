@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { fadeInUp } from "../utils/Animations";
 
 const About = () => {
@@ -8,7 +9,7 @@ const About = () => {
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
          >
         <h2 className="text-4xl font-bold mb-6 text-center">About Me</h2>
         <p className="text-gray-700 max-w-3xl mx-auto text-center leading-relaxed">
