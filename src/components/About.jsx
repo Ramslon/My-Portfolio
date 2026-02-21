@@ -4,7 +4,7 @@ import { fadeInUp } from "../utils/Animations";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-6 md:px-20 bg-white dark:bg-gray-900">
+    <section id="about" className="py-20 px-6 md:px-20 bg-white dark:bg-gray-900 scroll-mt-24">
         <motion.div
           variants={fadeInUp}
           initial="hidden"
