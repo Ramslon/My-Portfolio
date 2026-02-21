@@ -8,9 +8,9 @@ const Contact = () => {
             You can reach me at <span className="font-semibold">ramsonlonayo@gmail.com</span>
         </p>
         <div className="flex justify-center gap-4">
-            <a href="https://www.linkedin.com/in/ramson-lonayo-9b5a3221b/" className="text-blue-600 hover:underline">LinkedIn</a>
-            <a href="https://github.com/Ramslon" className="text-blue-600 hover:underline">GitHub</a>
-            <a href="mailto:ramsonlonayo@gmail.com" className="text-blue-600 hover:underline">Email</a>
+            <a href="https://www.linkedin.com/in/ramson-lonayo-9b5a3221b/" className="text-blue-600 hover:underline md:grid-cols-3 px-6 md:px-20">LinkedIn</a>
+            <a href="https://github.com/Ramslon" className="text-blue-600 hover:underline md:grid-cols-3 px-6 md:px-20">GitHub</a>
+            <a href="mailto:ramsonlonayo@gmail.com" className="text-blue-600 hover:underline md:grid-cols-3 px-6 md:px-20">Email</a>
         </div>
         </section>
   );
