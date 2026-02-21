@@ -10,8 +10,9 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
+          className="backdrop-blur-lg bg-white/10 dark:bg-black/30 rounded-2xl transition-all duration-300 p-6 md:p-10"
          >
-        <h2 className="text-4xl font-bold mb-6 text-center text-gray-900 dark:text-white">About Me</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center text-gray-900 dark:text-white">About Me</h2>
         <p className="text-gray-700 dark:text-gray-300 max-w-3xl mx-auto text-center leading-relaxed">
           I'm Ramson, a passionate Software Engineering Student at Kirinyaga University . 
           I enjoy building modern web and mobile applications using React, Flutter, and Node.js. 

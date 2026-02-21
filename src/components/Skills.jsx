@@ -10,10 +10,10 @@ const skills = [
 export default function Skills() {
   return (
     <section id="skills" className="py-20 px-8 bg-gray-50 dark:bg-gray-900 scroll-mt-24">
-      <h2 className="text-3xl font-bold mb-10 text-gray-900 dark:text-white">Skills</h2>
+      <h2 className="text-4xl md:text-5xl font-bold mb-10 text-gray-900 dark:text-white">Skills</h2>
 
       {skills.map((skill, index) => (
-        <div key={index} className="mb-6">
+        <div key={index} className="mb-6 backdrop-blur-lg bg-white/10 dark:bg-black/30 rounded-2xl transition-all duration-300 p-5">
           <div className="flex justify-between mb-2">
             <span className="text-gray-800 dark:text-gray-100">{skill.name}</span>
             <span className="text-gray-700 dark:text-gray-300">{skill.level}%</span>

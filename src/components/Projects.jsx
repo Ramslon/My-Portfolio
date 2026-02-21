@@ -28,8 +28,8 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-24 px-6 bg-white dark:bg-gray-900 scroll-mt-24">
-      <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Projects</h2>
+    <section id="projects" className="py-20 px-6 bg-white dark:bg-gray-900 scroll-mt-24">
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900 dark:text-white">Projects</h2>
 
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
     {projectsData.map((project, index) => (
@@ -43,7 +43,7 @@ const Projects = () => {
     initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
-    className="p-6 bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition block"
+    className="p-6 backdrop-blur-lg bg-white/10 dark:bg-black/30 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 block"
   >
     <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
       {project.title}
