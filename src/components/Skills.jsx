@@ -9,7 +9,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="py-20 px-8 bg-gray-50 dark:bg-gray-900">
+    <section id="skills" className="py-20 px-8 bg-gray-50 dark:bg-gray-900 scroll-mt-24">
       <h2 className="text-3xl font-bold mb-10 text-gray-900 dark:text-white">Skills</h2>
 
       {skills.map((skill, index) => (

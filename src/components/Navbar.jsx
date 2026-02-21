@@ -30,6 +30,7 @@ const Navbar = () => {
       <div className="flex items-center gap-4">
         <div className="space-x-6 hidden md:block text-gray-800 dark:text-gray-100">
           <a href="#about" className="hover:text-blue-600">About</a>
+          <a href="#skills" className="hover:text-blue-600">Skills</a>
           <a href="#projects" className="hover:text-blue-600">Projects</a>
           <a href="#contact" className="hover:text-blue-600">Contact</a>
         </div>
