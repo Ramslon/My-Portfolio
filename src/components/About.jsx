@@ -1,8 +1,15 @@
 import React from "react";
+import { fadeInUp } from "../utils/Animations";
 
 const About = () => {
   return (
     <section id="about" className="py-20 px-6 md:px-20 bg-white">
+        <motion.div
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+         >
         <h2 className="text-4xl font-bold mb-6 text-center">About Me</h2>
         <p className="text-gray-700 max-w-3xl mx-auto text-center leading-relaxed">
           I'm Ramson, a passionate Software Engineering Student at Kirinyaga University . 
@@ -11,7 +18,7 @@ const About = () => {
           I have experience in building projects for fitness apps, Commontable AI-app , ClimateSync AI app
         and other web solutions.
         </p>
-      
+        </motion.div>
     </section>
   );
 };
