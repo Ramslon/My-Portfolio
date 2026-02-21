@@ -1,4 +1,4 @@
-import React from "react";
+import { motion } from "framer-motion";
 
 const projectsData = [
     {
@@ -28,17 +28,21 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-6 md:px-20 bg-gray-50">
-        <h2 className="text-4xl font-bold mb-10 text-center">My Projects</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-            {projectsData.map((project, index) => (
-                <div key={index} className="bg-white shadow-md p-6 rounded hover:scale-105 transform transition">
-            <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-            <p className="text-gray-600 mb-4">{project.description}</p>
-            <a href={project.link} className="text-blue-600 hover:underline">View Project</a>
-          </div>
+    <section id="projects" className="py-24 px-6 bg-white">
+      <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
+
+      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {projectsData.map((project, index) => (
+          <motion.div
+            key={index}
+            whileHover={{ scale: 1.05 }}
+            className="p-6 bg-gray-50 rounded-2xl shadow-md hover:shadow-xl transition"
+          >
+            <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
+            <p className="text-gray-600">{project.description}</p>
+          </motion.div>
         ))}
-        </div>
+      </div>
     </section>
   );
 };

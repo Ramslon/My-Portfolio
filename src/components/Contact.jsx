@@ -1,18 +1,18 @@
-import React from "react";
+import { FaGithub, FaLinkedin ,FaEmail } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 px-6 md:px-20 bg-white">
-        <h2 className="text-4xl font-bold mb-6 text-center">Contact Me</h2>
-        <p className="text-center text-gray-700 mb-6">
-            You can reach me at <span className="font-semibold">ramsonlonayo@gmail.com</span>
+    <section id="contact" className="py-24 bg-gray-100 text-center">
+        <h2 className="text-4xl font-bold mb-6">Contact Me</h2>
+        <p className="mb -6 text-gray-700 ">
+            Let’s build something amazing together 🚀
         </p>
-        <div className="flex justify-center gap-4">
-            <a href="https://www.linkedin.com/in/ramson-lonayo-9b5a3221b/" className="text-blue-600 hover:underline md:grid-cols-3 px-6 md:px-20">LinkedIn</a>
-            <a href="https://github.com/Ramslon" className="text-blue-600 hover:underline md:grid-cols-3 px-6 md:px-20">GitHub</a>
-            <a href="mailto:ramsonlonayo@gmail.com" className="text-blue-600 hover:underline md:grid-cols-3 px-6 md:px-20">Email</a>
+        <div className="flex justify-center gap-6 text-2xl">
+            <a href="https://www.linkedin.com/in/ramson-lonayo-9b5a3221b/" className="text-blue-600 hover:underline "><FaLinkedin /></a>
+            <a href="https://github.com/Ramslon" className="text-blue-600 hover:underline "><FaGithub /></a>
+            <a href="mailto:ramsonlonayo@gmail.com" className="text-blue-600 hover:underline "><FaEmail /></a>
         </div>
-        </section>
+    </section>
   );
 }
 
