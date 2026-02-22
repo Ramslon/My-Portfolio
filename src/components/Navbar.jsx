@@ -28,9 +28,10 @@ const Navbar = () => {
       </h1>
 
       <div className="flex items-center gap-4">
-        <div className="space-x-6 hidden md:block text-gray-800 dark:text-gray-100">
+        <div className="flex flex-wrap gap-4 text-sm md:text-base text-gray-800 dark:text-gray-100">
           <a href="#about" className="hover:text-blue-600 transition-all duration-300">About</a>
           <a href="#skills" className="hover:text-blue-600 transition-all duration-300">Skills</a>
+          <a href="#experience" className="hover:text-blue-600 transition-all duration-300">Experience</a>
           <a href="#projects" className="hover:text-blue-600 transition-all duration-300">Projects</a>
           <a href="#contact" className="hover:text-blue-600 transition-all duration-300">Contact</a>
         </div>
