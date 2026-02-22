@@ -25,9 +25,7 @@ const Navbar = () => {
         transition={{ duration: 0.6 }}
         className="flex justify-between items-center px-8 py-4 backdrop-blur-md bg-white/70 dark:bg-gray-900/80 shadow-sm fixed w-full z-50"
       >
-        <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-          Ramson.dev
-        </h1>
+        
 
         <div className="flex items-center gap-4">
           <div className="hidden md:flex flex-wrap gap-4 text-sm md:text-base text-gray-800 dark:text-gray-100">

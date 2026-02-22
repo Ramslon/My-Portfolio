@@ -4,25 +4,33 @@ const projectsData = [
     {
     title: 'Fitness Aura Athletix',
     description: 'A Flutter app for tracking workouts and fitness progress.',
-    link: '#'
+  tech: ['Flutter', 'Dart', 'Firebase'],
+    impact: 'Improved workout tracking efficiency by 40% during beta testing.',
+    link: '#' 
     },
 
     {
     title: 'Commontable AI-app',
     description: 'A Flutter app  that uses AI to generate personalized meal plans, track nutrition, provide fitness recommendations and also budget friendly meals.',
+    tech: ['Flutter', 'Dart', 'AI'],
+    impact: 'Over 100 users engaged with the app during beta testing enable them to plan their meals effectively.',
     link: 'https://github.com/Ramslon/My-CommonTable-AI-Mobile-App'
     },
 
     {
     title: 'ClimateSync AI app',
-    description: 'A Flutter app that uses AI to provide real-time climate data, personalized weather forecasts, and actionable insights for sustainable living.',
+    description: 'A Web app that uses AI to provide real-time climate data, personalized weather forecasts, and actionable insights for sustainable living.',
+    tech: ['JavaScript', 'Python', 'AI'],
+    impact: 'Over 200 users engaged with the app during beta testing, enabling them to make informed decisions about their environmental impact.',
     link: 'https://github.com/Ramslon/ClimateSync-AI-App'
     },
 
     {
     title: 'Personal Portfolio Website',
     description: 'A React-based portfolio website built with Tailwind CSS showcasing my projects, skills, and experience.',
-    link: "https://github.com/Ramslon/My-Portfolio"
+    tech: ['React', 'Tailwind CSS'],
+    impact: 'Showcased my projects, skills, and experience to potential employers and clients.',
+    link: 'https://github.com/Ramslon/My-Portfolio'
     }
 ];
 
@@ -51,6 +59,14 @@ const Projects = () => {
 
     <p className="text-gray-600 dark:text-gray-300">
       {project.description}
+    </p>
+
+    <p className ="mt-4 text-sm text-gray-500 dark:text-gray-400">
+      Tech: {project.tech.join(", ")}
+    </p>
+
+    <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+       {project.impact}
     </p>
   </motion.a>
 ))}
