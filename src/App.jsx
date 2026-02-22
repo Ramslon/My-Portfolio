@@ -10,6 +10,7 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Interest from "./components/Interests";
 import Testimonials from "./components/Testimonials";
+import Blog from "./components/Blog";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Education/>
       <Skills/>
       <Projects/>
+      <Blog/>
       <Testimonials/>
       <Interest/>
       <Contact/>
