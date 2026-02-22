@@ -36,6 +36,7 @@ const Navbar = () => {
             <a href="#education" className="hover:text-blue-600 transition-all duration-300">Education</a>
             <a href="#skills" className="hover:text-blue-600 transition-all duration-300">Skills</a>
             <a href="#projects" className="hover:text-blue-600 transition-all duration-300">Projects</a>
+            <a href="#testimonials" className="hover:text-blue-600 transition-all duration-300">Testimonials</a>
             <a href="#interests" className="hover:text-blue-600 transition-all duration-300">Interests</a>
             <a href="#contact" className="hover:text-blue-600 transition-all duration-300">Contact</a>
           </div>
@@ -64,6 +65,7 @@ const Navbar = () => {
             <a href="#experience" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-all duration-300">Experience</a>
             <a href="#education" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-all duration-300">Education</a>
             <a href="#projects" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-all duration-300">Projects</a>
+            <a href="#testimonials" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-all duration-300">Testimonials</a>
             <a href="#interests" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-all duration-300">Interests</a>
             <a href="#contact" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-all duration-300">Contact</a>
           </div>
