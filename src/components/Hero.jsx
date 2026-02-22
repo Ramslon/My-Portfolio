@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-
-const HERO_IMAGE_PATH = "/profile.jpg";
+import profileImage from "../assets/profile.jpg";
 
 const Hero = () => {
   return (
@@ -50,7 +49,7 @@ const Hero = () => {
             >
               <div className="p-3 rounded-3xl bg-white/20 dark:bg-white/10 border border-white/30 backdrop-blur-md shadow-xl">
                 <img
-                  src={HERO_IMAGE_PATH}
+                  src={profileImage}
                   alt="Ramson Lunayo profile"
                   className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full border-4 border-blue-600 shadow-lg"
                 />
