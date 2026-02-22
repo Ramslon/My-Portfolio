@@ -25,14 +25,18 @@ const Navbar = () => {
         transition={{ duration: 0.6 }}
         className="flex justify-between items-center px-8 py-4 backdrop-blur-md bg-white/70 dark:bg-gray-900/80 shadow-sm fixed w-full z-50"
       >
-        
+        <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent whitespace-nowrap">
+          Ramson.dev
+        </h1>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
           <div className="hidden md:flex flex-wrap gap-4 text-sm md:text-base text-gray-800 dark:text-gray-100">
             <a href="#about" className="hover:text-blue-600 transition-all duration-300">About</a>
-            <a href="#skills" className="hover:text-blue-600 transition-all duration-300">Skills</a>
             <a href="#experience" className="hover:text-blue-600 transition-all duration-300">Experience</a>
+            <a href="#education" className="hover:text-blue-600 transition-all duration-300">Education</a>
+            <a href="#skills" className="hover:text-blue-600 transition-all duration-300">Skills</a>
             <a href="#projects" className="hover:text-blue-600 transition-all duration-300">Projects</a>
+            <a href="#interests" className="hover:text-blue-600 transition-all duration-300">Interests</a>
             <a href="#contact" className="hover:text-blue-600 transition-all duration-300">Contact</a>
           </div>
 
@@ -58,7 +62,9 @@ const Navbar = () => {
             <a href="#about" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-all duration-300">About</a>
             <a href="#skills" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-all duration-300">Skills</a>
             <a href="#experience" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-all duration-300">Experience</a>
+            <a href="#education" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-all duration-300">Education</a>
             <a href="#projects" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-all duration-300">Projects</a>
+            <a href="#interests" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-all duration-300">Interests</a>
             <a href="#contact" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-all duration-300">Contact</a>
           </div>
         </div>

@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Experience from "./components/Experience";
+import Education from "./components/Education";
+import Interest from "./components/Interests";
 
 function App() {
   return (
@@ -14,9 +16,11 @@ function App() {
       <Navbar/>
       <Hero/>
       <About/>
-      <Skills/>
       <Experience/>
+      <Education/>
+      <Skills/>
       <Projects/>
+      <Interest/>
       <Contact/>
       <Footer/>
     </>
