@@ -18,7 +18,7 @@ const FLOATING_ICONS = [
 const Hero = () => {
   return (
     <section className="min-h-screen py-20 bg-gradient-to-br from-blue-50 to-purple-100 dark:from-gray-900 dark:to-gray-800 pt-20">
-      <div className="max-w-6xl mx-auto px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="text-center lg:text-left">
           <motion.h1
             initial={{ opacity: 0, y: 40 }}

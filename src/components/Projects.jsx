@@ -7,10 +7,10 @@ const projectsData = [
     {
     title: 'Fitness Aura Athletix',
     description: 'A Flutter app for tracking workouts and fitness progress.',
-  tech: ['Flutter', 'Dart', 'Firebase'],
+    tech: ['Flutter', 'Dart', 'Firebase'],
     category: 'Mobile',
     impact: 'Improved workout tracking efficiency by 40% during beta testing.',
-    link: '#' 
+    link: 'https://github.com/Ramslon/Fitness-Aura-Athletix-App' 
     },
 
     {

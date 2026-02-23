@@ -23,9 +23,9 @@ const Navbar = () => {
         initial={{ y: -80 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6 }}
-        className="flex justify-between items-center px-8 py-4 backdrop-blur-md bg-white/70 dark:bg-gray-900/80 shadow-sm fixed w-full z-50"
+        className="flex justify-between items-center px-4 sm:px-6 md:px-8 py-4 backdrop-blur-md bg-white/70 dark:bg-gray-900/80 shadow-sm fixed w-full z-50"
       >
-        <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent whitespace-nowrap">
+        <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           Ramson.dev
         </h1>
 
@@ -59,7 +59,7 @@ const Navbar = () => {
         </div>
       </motion.nav>
       {menuOpen && (
-        <div className="md:hidden fixed top-20 left-0 right-0 z-40 px-8 pb-4">
+        <div className="md:hidden fixed top-20 left-0 right-0 z-40 px-4 sm:px-6 pb-4">
           <div className="rounded-lg bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-sm p-4 flex flex-col gap-3 text-gray-800 dark:text-gray-100">
             <a href="#about" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-all duration-300">About</a>
             <a href="#skills" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 transition-all duration-300">Skills</a>
