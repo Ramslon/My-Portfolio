@@ -15,6 +15,18 @@ const FLOATING_ICONS = [
   { icon: SiTailwindcss, className: "bottom-10 -right-5 text-sky-500" },
 ];
 
+const HERO_HEADING_WORDS = [
+  { text: "Hi," },
+  { text: "I'm" },
+  { text: "Ramson", highlight: true },
+  { text: "Lunayo", highlight: true },
+  { text: "👋" },
+  { text: "Welcome" },
+  { text: "to" },
+  { text: "My" },
+  { text: "Portfolio" },
+];
+
 const Hero = () => {
   return (
     <section className="min-h-screen py-20 bg-gradient-to-br from-blue-50 to-purple-100 dark:from-gray-900 dark:to-gray-800 pt-20">
@@ -25,8 +37,37 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-5xl font-bold mb-8 text-gray-900 dark:text-white"
+            aria-label="Hi, I'm Ramson Lunayo. Welcome to My Portfolio."
           >
-            Hi, I'm <span className="text-blue-600">Ramson Lunayo</span>👋 Welcome to My Portfolio
+            {HERO_HEADING_WORDS.map(({ text, highlight }, wordIndex) => {
+              const characterOffset = HERO_HEADING_WORDS
+                .slice(0, wordIndex)
+                .reduce((total, word) => total + Array.from(word.text).length + 1, 0);
+
+              return (
+                <span
+                  key={text}
+                  aria-hidden="true"
+                  className={`inline-block ${highlight ? "text-blue-600" : ""}`}
+                >
+                  {Array.from(text).map((character, characterIndex) => (
+                    <motion.span
+                      key={`${character}-${characterIndex}`}
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{
+                        delay: (characterOffset + characterIndex) * 0.045,
+                        duration: 0.12,
+                      }}
+                      className="inline-block"
+                    >
+                      {character}
+                    </motion.span>
+                  ))}
+                  {wordIndex < HERO_HEADING_WORDS.length - 1 && " "}
+                </span>
+              );
+            })}
           </motion.h1>
 
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
