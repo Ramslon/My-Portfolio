@@ -61,15 +61,25 @@ const Hero = () => {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="flex flex-col items-center lg:items-end"
             >
-              <div className="relative group">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/40 to-purple-500/40 blur-2xl scale-110" />
+              <div className="relative isolate group">
+                <div className="absolute inset-0 z-0 rounded-full bg-gradient-to-r from-blue-500/40 to-purple-500/40 blur-2xl scale-110" />
 
                 {FLOATING_ICONS.map(({ icon: Icon, className }, index) => (
                   <motion.div
                     key={index}
-                    animate={{ y: [0, -8, 0] }}
-                    transition={{ duration: 2 + index * 0.4, repeat: Infinity, ease: "easeInOut" }}
-                    className={`absolute ${className} w-10 h-10 rounded-full bg-white/70 dark:bg-gray-800/80 border border-white/40 backdrop-blur-md shadow-lg flex items-center justify-center`}
+                    initial={{ opacity: 0, scale: 0.4 }}
+                    animate={{ opacity: 1, scale: 1, y: [0, -8, 0] }}
+                    transition={{
+                      opacity: { delay: index * 0.16, duration: 0.3 },
+                      scale: { delay: index * 0.16, type: "spring", stiffness: 260, damping: 16 },
+                      y: {
+                        delay: index * 0.16 + 0.3,
+                        duration: 2 + index * 0.4,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                      },
+                    }}
+                    className={`absolute z-20 ${className} w-10 h-10 rounded-full bg-white/70 dark:bg-gray-800/80 border border-white/40 backdrop-blur-md shadow-lg flex items-center justify-center`}
                   >
                     <Icon className="text-xl" />
                   </motion.div>
@@ -78,7 +88,7 @@ const Hero = () => {
                 <motion.div
                   whileHover={{ scale: 1.04, rotate: 1 }}
                   transition={{ type: "spring", stiffness: 220, damping: 18 }}
-                  className="relative p-3 rounded-3xl bg-white/20 dark:bg-white/10 border border-white/30 backdrop-blur-md shadow-xl"
+                  className="relative z-10 p-3 rounded-3xl bg-white/20 dark:bg-white/10 border border-white/30 backdrop-blur-md shadow-xl"
                 >
                   <img
                     src={profileImage}
